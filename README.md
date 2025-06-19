@@ -8,8 +8,6 @@ This project demonstrates a basic ETL (Extract, Transform, Load) process impleme
 
 - [Features](#features)
 - [Requirements](#requirements)
-- [Setup](#setup)
-- [Usage](#usage)
 - [ETL Steps Overview](#etl-steps-overview)
 - [Customization](#customization)
 - [Example](#example)
@@ -17,7 +15,7 @@ This project demonstrates a basic ETL (Extract, Transform, Load) process impleme
 
 ## Features
 
-- Extracts data from the Collect API over HTTP
+- Extracts data from the Collect API USING REQUESTS
 - Uses pandas for flexible data transformation
 - Loads data into PostgreSQL via SQLAlchemy
 - Easily customizable for different APIs, transformations, and database schemas
@@ -33,35 +31,7 @@ This project demonstrates a basic ETL (Extract, Transform, Load) process impleme
   - psycopg2-binary
   - requests
 
-## Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/simple-etl.git
-   cd simple-etl
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Provide your PostgreSQL database connection string in your environment or directly in the script.
-
-4. Set your Collect API credentials (e.g., API key) as environment variables or in the script.
-
-## Usage
-
-1. Set your Collect API credentials and PostgreSQL database connection string, for example, as environment variables:
-   ```bash
-   export COLLECT_API_KEY=your_collect_api_key
-   export DATABASE_URL=postgresql+psycopg2://user:password@localhost:5432/yourdatabase
-   ```
-
-2. Run the ETL pipeline:
-   ```bash
-   python etl.py
-   ```
 
 ## ETL Steps Overview
 
